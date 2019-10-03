@@ -80,3 +80,16 @@ bottomContentP[1].innerHTML = siteContent["main-content"]["product-content"]
 
 bottomContentH4[2].innerHTML = siteContent["main-content"]["vision-h4"]
 bottomContentP[2].innerHTML = siteContent["main-content"]["vision-content"]
+
+
+let contactH4 = document.querySelector('.contact h4')
+contactH4.innerHTML = siteContent["contact"]["contact-h4"]
+
+let contactP = document.querySelectorAll(".contact p")
+contactP[0].innerHTML = siteContent["contact"]["address"]
+contactP[1].innerHTML = siteContent["contact"]["phone"]
+contactP[2].innerHTML = siteContent["contact"]["email"]
+
+
+let footer = document.querySelector("footer p")
+footer.innerHTML = siteContent["footer"]["copyright"]

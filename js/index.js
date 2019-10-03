@@ -41,12 +41,19 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let nav = document.querySelectorAll("nav a");
-nav.forEach((link, index) => {
+let navLink = document.querySelectorAll("nav a");
+navLink.forEach((link, index) => {
   link.innerHTML = siteContent.nav[`nav-item-${index + 1}`];
   link.style.color = 'green'
 
 });
+
+let nav = document.querySelector('nav')
+let newLink = document.createElement('a')
+newLink.innerHTML = "Hello"
+
+nav.prepend(newLink)
+
 
 let ctaText = document.querySelector('.cta .cta-text h1')
 ctaText.innerHTML = siteContent["cta"]["h1"]

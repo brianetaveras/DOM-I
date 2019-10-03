@@ -61,6 +61,11 @@ ctaText.innerHTML = siteContent["cta"]["h1"]
 let ctaButton = document.querySelector('.cta .cta-text button')
 ctaButton.innerHTML = siteContent["cta"]["button"]
 
+ctaButton.addEventListener('click', function(){
+  ctaText.innerHTML = 'You pressed a button!'
+
+})
+
 let imgCTA = document.getElementById('cta-img')
 imgCTA.setAttribute('src', siteContent["cta"]["img-src"])
 
